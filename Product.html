@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Футболка1</title>
+  <link rel="stylesheet" href="css/simple-adaptive-slider.css">
+  <link rel="stylesheet" href="css/ProductStyle.css">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- Подключаем JS слайдера -->
+  <script defer src="js/simple-adaptive-slider.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // активация слайдера
+      new ItcSimpleSlider('.itcss', {
+        loop: true,
+        autoplay: true,
+        swipe: true
+      });
+    });
+  </script>
+</head>
+
+<body class="body">
+  <!-- Разметка слайдера -->
+  <div class="itcss">
+    <div class="itcss__wrapper">
+      <div class="itcss__items">
+        <div class="itcss__item">
+          <img src="img/Футболка.jpg" alt="Футболка" class="img">
+        </div>
+        <div class="itcss__item">
+          <img src="img/Футболка.jpg" alt="Футболка" class="img">
+        </div>
+        <div class="itcss__item">
+          <img src="img/Футболка.jpg" alt="Футболка" class="img">
+        </div>
+        <div class="itcss__item">
+          <img src="img/Футболка.jpg" alt="Футболка" class="img">
+        </div>
+      </div>
+    </div>
+    <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
+    <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button>
+  </div>
+  <div class="Info">
+    <p class="ProductName">ФУТБОЛКА ПИЗДАТАЯ</p>
+    <p class="Price">1000₽</p>
+  </div>
+  <div class="sizetablebutton"> 
+    <a href="Sizetable.html">
+    <p id="tablebutton" >
+     
+      <i id="icontable"class="fa fa-table-cells"></i>
+    Таблица размеров
+    </p>
+  </a>
+</div>
+  <div class="checksize">
+  
+    <div role="button" subcategory="t-shirt" class="btn___SizeBtn___3QVOO dontAllow___SizeBtn___LseEx choosen___SizeBtn___3EvUb">S</div>
+    <div role="button" subcategory="t-shirt" class="btn___SizeBtn___3QVOO dontAllow___SizeBtn___LseEx">M</div>
+    <div role="button" subcategory="t-shirt" class="btn___SizeBtn___3QVOO dontAllow___SizeBtn___LseEx">L</div>
+
+  </div>
+
+<section class="headerinfo">
+  <label id="headerdata">
+  Описание  
+  </label>
+  <div id="block"></div>
+</section>
+<section class="bodyinfo">
+  <div id="datablock">
+
+  </div>
+</section>
+ <section class="sticky">
+  <button id="trashb">   
+    В корзину
+ </button>
+</section>
+
+</body>
+<script src="js/product.js"></script>
+</html>
